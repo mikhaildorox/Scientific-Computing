@@ -4,4 +4,4 @@ test = '25 + 100'
 answer = True
 
 def arithmetic_arranger(test, answer):
-  test
+  test = 1
