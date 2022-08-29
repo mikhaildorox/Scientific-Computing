@@ -1,7 +1,7 @@
 # Scientific computing with python
 
 expressions = ['4000 + 20', '150 - 10']
-answer = True
+answer = 'n'
 chars = '-+'
 
 
@@ -34,18 +34,18 @@ def qty_whitespace(expression):
         qty_for_digit1 = len(expr_split[2]) - len(expr_split[0])
         return qty_for_digit1 + 2, qty_for_digit2
     else:
-
         return qty_for_digit1 + 1, qty_for_digit2
 
 
-def print_result(result):
-    answer = input('Print result? y/n')
+def print_result(answer):
     if answer == 'y':
-        return print(result)
+        return print(arithmetic_arranger(expressions))
     elif answer == 'n':
-        return
+        return print('')
     else:
         print('Enter y or n')
 
 
 arithmetic_arranger(expressions)
+answer = input('Print result? y/n')
+print_result(answer)
