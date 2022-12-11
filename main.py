@@ -1,6 +1,6 @@
 # Scientific computing with python
 
-expressions = ['1 + 13', '10 + 2', '3 * 100', '40000 + 200', '1500 - 1000']
+expressions = ['1 + 13', '10 + 2', '3 + 100', '4000 + 200', '1500 - 10']
 operators = '-+'
 answer = 'y'
 
