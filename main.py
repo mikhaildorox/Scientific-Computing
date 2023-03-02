@@ -12,9 +12,9 @@ def arithmetic_arranger(expressions, answer):  # Вычисление выраж
     for expression in expressions:  # Выбирается по одному выражению из списка выражений
         columns = ['expression ' + str(iteration)]
         expr_split = (expression.split())  # разбиваю выражение
-        first_number = expr_split[0]
-        second_number = expr_split[2]
-        operator = expr_split[1]
+        first_number = expr_split[0] # первое число
+        second_number = expr_split[2] # второе число
+        operator = expr_split[1] # оператор
         if not first_number.isdigit() or not second_number.isdigit():
             print(f'expession {iteration}')
             print('Error: Numbers must only contain digits.')
